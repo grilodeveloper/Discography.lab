@@ -1,0 +1,38 @@
+{
+  "albums": [
+    {
+      "id": 1,
+      "title": "The Colour and the Shape",
+      "artist": "Foo Fighters",
+      "data": "1997-05-20",
+      "genre": "Post-grunge",
+      "recordLabel": "Capitol",
+      "coverUrl": "https://upload.wikimedia.org/wikipedia/en/0/0d/FooFighters-TheColourAndTheShape.jpg",
+      "credits": [
+        { "name": "Gil Norton", "role": "Producer" },
+        { "name": "Dave Grohl", "role": "Vocals, guitar, drums" },
+        { "name": "Nate Mendel", "role": "Bass" },
+        { "name": "Pat Smear", "role": "Guitar" },
+        { "name": "Taylor Hawkins", "role": "Drums" },
+        { "name": "Franz Stahl", "role": "Guitar" }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "In Rainbows",
+      "artist": "Radiohead",
+      "data": "2007-10-10",
+      "genre": "Alternative rock",
+      "recordLabel": "XL Recordings",
+      "coverUrl": "https://upload.wikimedia.org/wikipedia/en/7/7e/InRainbows.jpg",
+      "credits": [
+        { "name": "Nigel Godrich", "role": "Producer" },
+        { "name": "Thom Yorke", "role": "Vocals, guitar" },
+        { "name": "Jonny Greenwood", "role": "Guitar, keyboards" },
+        { "name": "Colin Greenwood", "role": "Bass" },
+        { "name": "Ed O'Brien", "role": "Guitar, backing vocals" },
+        { "name": "Philip Selway", "role": "Drums" }
+      ]
+    }
+  ]
+}
