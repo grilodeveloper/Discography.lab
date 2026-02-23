@@ -5,16 +5,15 @@
       "title": "The Colour and the Shape",
       "artist": "Foo Fighters",
       "data": "1997-05-20",
-      "genre": "Post-grunge",
+      "genre": "Rock",
       "recordLabel": "Capitol",
-      "coverUrl": "https://upload.wikimedia.org/wikipedia/en/0/0d/FooFighters-TheColourAndTheShape.jpg",
+      "coverUrl": "https://open.spotify.com/album/30ly6F6Xl0TKmyBCU50Khv",
       "credits": [
         { "name": "Gil Norton", "role": "Producer" },
         { "name": "Dave Grohl", "role": "Vocals, guitar, drums" },
         { "name": "Nate Mendel", "role": "Bass" },
         { "name": "Pat Smear", "role": "Guitar" },
-        { "name": "Taylor Hawkins", "role": "Drums" },
-        { "name": "Franz Stahl", "role": "Guitar" }
+        { "name": "Taylor Hawkins", "role": "Drums" }
       ]
     },
     {
@@ -22,16 +21,75 @@
       "title": "In Rainbows",
       "artist": "Radiohead",
       "data": "2007-10-10",
-      "genre": "Alternative rock",
+      "genre": "Art Rock",
       "recordLabel": "XL Recordings",
-      "coverUrl": "https://upload.wikimedia.org/wikipedia/en/2/2e/In_Rainbows_Official_Cover.jpg",
+      "coverUrl": "https://m.media-amazon.com/images/I/71XmO9n3FHL._AC_SL1500_.jpg",
       "credits": [
         { "name": "Nigel Godrich", "role": "Producer" },
         { "name": "Thom Yorke", "role": "Vocals, guitar" },
         { "name": "Jonny Greenwood", "role": "Guitar, keyboards" },
         { "name": "Colin Greenwood", "role": "Bass" },
-        { "name": "Ed O'Brien", "role": "Guitar, backing vocals" },
         { "name": "Philip Selway", "role": "Drums" }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "The Artist in the Ambulance",
+      "artist": "Thrice",
+      "data": "2003-07-22",
+      "genre": "Post-hardcore",
+      "recordLabel": "Island",
+      "coverUrl": "https://m.media-amazon.com/images/I/71Yv3SInRHL._AC_SL1200_.jpg",
+      "credits": [
+        { "name": "Brian McTernan", "role": "Producer" },
+        { "name": "Dustin Kensrue", "role": "Vocals, guitar" },
+        { "name": "Teppei Teranishi", "role": "Guitar, backing vocals" },
+        { "name": "Eddie Breckenridge", "role": "Bass" },
+        { "name": "Riley Breckenridge", "role": "Drums" }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Californication",
+      "artist": "Red Hot Chili Peppers",
+      "data": "1999-06-08",
+      "genre": "Alternative Rock",
+      "recordLabel": "Warner Records",
+      "coverUrl": "https://m.media-amazon.com/images/I/81pP6jLIdmL._AC_SL1500_.jpg",
+      "credits": [
+        { "name": "Rick Rubin", "role": "Producer" },
+        { "name": "Anthony Kiedis", "role": "Vocals" },
+        { "name": "John Frusciante", "role": "Guitar, backing vocals" },
+        { "name": "Flea", "role": "Bass" },
+        { "name": "Chad Smith", "role": "Drums" }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Sometimes",
+      "artist": "City and Colour",
+      "data": "2005-11-01",
+      "genre": "Acoustic",
+      "recordLabel": "Dine Alone Records",
+      "coverUrl": "https://m.media-amazon.com/images/I/71v-R6C08CL._AC_SL1000_.jpg",
+      "credits": [
+        { "name": "Dallas Green", "role": "Vocals, guitar, producer" },
+        { "name": "Julius Butty", "role": "Producer, engineer" }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "...Like Clockwork",
+      "artist": "Queens of the Stone Age",
+      "data": "2013-06-03",
+      "genre": "Stoner Rock",
+      "recordLabel": "Matador",
+      "coverUrl": "https://m.media-amazon.com/images/I/71m6k4xR2eL._AC_SL1200_.jpg",
+      "credits": [
+        { "name": "Josh Homme", "role": "Vocals, guitar" },
+        { "name": "Troy Van Leeuwen", "role": "Guitar, backing vocals" },
+        { "name": "Dave Grohl", "role": "Drums" },
+        { "name": "Trent Reznor", "role": "Vocals, backing vocals" }
       ]
     }
   ]

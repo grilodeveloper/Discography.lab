@@ -8,7 +8,6 @@ interface AlbumCardProps {
 export function AlbumCard({ album }: AlbumCardProps) {
   const { selectedAlbum, setSelectedAlbum } = useAlbumStore();
 
-  // Verificamos se este card específico é o que está selecionado na Store
   const isSelected = selectedAlbum?.id === album.id;
 
   return (

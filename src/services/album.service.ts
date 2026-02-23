@@ -9,6 +9,5 @@ export async function getAlbums(): Promise<Album[]> {
   }
 
   const data = await response.json();
-  console.log(data);
   return AlbumSchema.array().parse(data);
 }

@@ -2,11 +2,20 @@ import { useQuery } from '@tanstack/react-query';
 import { getAlbums } from './services/album.service';
 import { AlbumCard } from './components/AlbumCard';
 import { AlbumDetails } from './components/AlbumDetails';
+import { useAlbumStore } from './store/useAlbumStore';
+import { SearchBar } from './components/SearchBar';
 
 function App() {
   const { data, isLoading, isError, error } = useQuery({
     queryKey: ['albums'],
     queryFn: getAlbums,
+  });
+
+  const { searchTerm } = useAlbumStore();
+
+  const filteredAlbums = data?.filter((album) => {
+    const term = searchTerm.toLowerCase();
+    return album.title.toLowerCase().includes(term) || album.artist.toLowerCase().includes(term);
   });
 
   if (isLoading)
@@ -23,14 +32,20 @@ function App() {
       </header>
 
       <main className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8">
-        {/* Coluna da Esquerda: Lista */}
-        <div className="lg:col-span-5 space-y-4">
-          {data?.map((album) => (
-            <AlbumCard key={album.id} album={album} />
-          ))}
+        <div className="lg:col-span-5">
+          <SearchBar />
+
+          <div className="space-y-4">
+            {filteredAlbums?.map((album) => (
+              <AlbumCard key={album.id} album={album} />
+            ))}
+
+            {filteredAlbums?.length === 0 && (
+              <p className="text-slate-600 italic">No albums found for "{searchTerm}"</p>
+            )}
+          </div>
         </div>
 
-        {/* Coluna da Direita: Detalhes */}
         <div className="lg:col-span-7">
           <AlbumDetails />
         </div>

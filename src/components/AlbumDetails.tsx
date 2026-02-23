@@ -3,7 +3,6 @@ import { useAlbumStore } from '../store/useAlbumStore';
 export function AlbumDetails() {
   const { selectedAlbum, setSelectedAlbum } = useAlbumStore();
 
-  // Se não houver álbum selecionado, mostramos um estado vazio (Empty State)
   if (!selectedAlbum) {
     return (
       <div className="h-full flex items-center justify-center border-2 border-dashed border-slate-800 rounded-xl text-slate-600 p-10 text-center">
@@ -16,8 +15,8 @@ export function AlbumDetails() {
     <div className="bg-slate-800 p-6 rounded-xl border border-slate-700 sticky top-10 animate-in fade-in slide-in-from-right-4 duration-500">
       <img
         src={selectedAlbum.coverUrl}
+        className="w-full h-full object-cover bg-slate-800"
         alt={selectedAlbum.title}
-        className="w-40 h-40 rounded shadow-2xl mb-6 object-cover mx-auto lg:mx-0"
       />
 
       <h2 className="text-3xl font-bold mb-1">{selectedAlbum.title}</h2>
