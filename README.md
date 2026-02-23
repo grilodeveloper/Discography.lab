@@ -1,51 +1,33 @@
-🎵 Discography.lab
-Um laboratório de estudos focado em Fundamentos de React e Arquitetura de Dados, focado na ficha técnica de álbuns de bandas como Radiohead, Foo Fighters e Queens of the Stone Age. Este projeto foi desenvolvido com o objetivo de aprofundar conhecimentos técnicos e evitar a dependência excessiva de ferramentas de IA, priorizando o entendimento real de cada linha de código.
+# 🎵 Discography.lab
 
-🛠️ Stack Tecnológica
-O projeto utiliza o que há de mais moderno e performático no ecossistema Front-end em 2026:
+An advanced study laboratory focused on **React Fundamentals** and **Data Architecture**. This project explores the technical specifications (liner notes) of albums from iconic bands such as Radiohead, Foo Fighters, and Queens of the Stone Age.
 
-Vite + React 19: Ambiente de desenvolvimento ultra-rápido.
+The primary goal of this repository is to strengthen core programming foundations and eliminate over-reliance on AI tools, prioritizing a deep, line-by-line understanding of modern software architecture.
 
-TypeScript: Tipagem estática para garantir a segurança e previsibilidade dos dados.
+## 🛠️ Tech Stack
 
-TanStack Query (v5): Gerenciamento declarativo de estado de servidor e cache.
+This project leverages the most modern and performant tools in the 2026 Front-end ecosystem:
 
-Zod: Validação de schemas em tempo de execução para garantir a integridade dos dados vindos da API.
+* **Vite + React 19**: Ultra-fast development environment and the latest React features.
+* **TypeScript**: Static typing to ensure data safety, predictability, and robust developer experience.
+* **TanStack Query (v5)**: Declarative server-state management, handling caching and synchronization.
+* **Zod**: Runtime schema validation to guarantee the integrity of data consumed from APIs.
+* **Tailwind CSS v4**: Modern, high-performance utility-first styling.
+* **JSON Server**: A simulated REST API for data persistence and realistic fetching scenarios.
 
-Tailwind CSS v4: Estilização moderna e eficiente.
+## 🚀 Key Learning Milestones
 
-JSON Server: Simulação de uma API REST para persistência de dados.
+Moving beyond "Vibe Coding," this project implements:
 
-🚀 O que aprendi até agora (Milestones)
-Diferente de um "vibe coder", este projeto foca em:
+1.  **Non-negotiable Data Contracts**: Using **Zod** schemas to validate albums and their technical credits before they even reach the UI layer.
+2.  **Service Pattern**: Isolation of `fetch` logic into specialized services, utilizing **TypeScript Generics** for reusable and type-safe API calls.
+3.  **Declarative Fetching**: Replacing manual `useEffect` hooks with **TanStack Query** to professionally manage `loading`, `error`, and `cache` states.
+4.  **End-to-End Typing**: Leveraging `z.infer` so TypeScript understands exactly what an Album object contains, preventing "undefined" errors at runtime.
 
-Contratos de Dados Inegociáveis: Implementação de schemas com Zod que validam os álbuns e seus créditos antes mesmo de chegarem à interface.
+## 📦 Getting Started
 
-Service Pattern: Isolamento da lógica de fetch em serviços especializados e tipados com Generics do TypeScript.
+Follow these steps to run the laboratory locally:
 
-Declarative Fetching: Substituição do useEffect manual pelo TanStack Query para lidar com estados de loading, error e cache.
-
-Tipagem de Ponta a Ponta: Uso de z.infer para que o TypeScript saiba exatamente o que um Álbum contém, evitando erros de "undefined" em tempo de execução.
-
-📦 Como rodar o projeto
-Bash
-
-# 1. Instalar as dependências
-
+### 1. Install Dependencies
+```bash
 npm install
-
-# 2. Iniciar o JSON Server (Back-end fake)
-
-# Certifique-se de que o db.json está na raiz
-
-npx json-server db.json --port 3001
-
-# 3. Iniciar o ambiente de desenvolvimento (Front-end)
-
-npm run dev
-📈 Próximos Passos
-[ ] Implementar Gerenciamento de Estado Global com Zustand.
-
-[ ] Criar visualização detalhada da ficha técnica (Credits).
-
-[ ] Adicionar filtros por gênero e gravadora.
