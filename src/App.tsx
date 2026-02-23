@@ -1,5 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import { getAlbums } from './services/album.service';
+import { AlbumCard } from './components/AlbumCard';
+import { AlbumDetails } from './components/AlbumDetails';
 
 function App() {
   const { data, isLoading, isError, error } = useQuery({
@@ -7,31 +9,32 @@ function App() {
     queryFn: getAlbums,
   });
 
-  if (isLoading) {
-    return <div className="text-white">Carregando álbuns...</div>;
-  }
-
-  if (isError) {
-    return <div className="text-red-500">Erro: {error.message}</div>;
-  }
+  if (isLoading)
+    return <div className="p-10 text-blue-400 animate-pulse">Loading collection...</div>;
+  if (isError) return <div className="p-10 text-red-500">Error: {error.message}</div>;
 
   return (
-    <div className="min-h-screen bg-slate-900 text-white p-10">
-      <h1 className="text-3xl font-bold mb-6">Music Collection</h1>
+    <div className="min-h-screen bg-slate-950 text-slate-100 p-6 lg:p-12">
+      <header className="max-w-7xl mx-auto mb-12">
+        <h1 className="text-4xl font-black tracking-tighter text-white">
+          Discography<span className="text-blue-500">.lab</span>
+        </h1>
+        <p className="text-slate-500">Professional album credits & technical liner notes.</p>
+      </header>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {data?.map((album) => (
-          <div key={album.id} className="p-4 border border-slate-700 rounded-lg">
-            <h2 className="text-xl font-semibold">{album.title}</h2>
-            <p className="text-slate-400">
-              {album.artist} - {album.data}
-            </p>
-            <p className="text-slate-400">
-              {album.genre} - {album.recordLabel}
-            </p>
-          </div>
-        ))}
-      </div>
+      <main className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8">
+        {/* Coluna da Esquerda: Lista */}
+        <div className="lg:col-span-5 space-y-4">
+          {data?.map((album) => (
+            <AlbumCard key={album.id} album={album} />
+          ))}
+        </div>
+
+        {/* Coluna da Direita: Detalhes */}
+        <div className="lg:col-span-7">
+          <AlbumDetails />
+        </div>
+      </main>
     </div>
   );
 }
